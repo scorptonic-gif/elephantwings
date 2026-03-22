@@ -1,0 +1,232 @@
+/* ============================================================
+   GrapesJS — Elephant Wings Admin Theme
+   Colors: #E85A1A (orange), #C8174F (crimson), #111827 (dark)
+   ============================================================ */
+
+/* Hide GrapesJS default panel chrome — we use our own layout */
+.gjs-pn-panels { display: none !important; }
+.gjs-editor { border: none !important; background: transparent !important; }
+
+/* Canvas background */
+.gjs-cv-canvas {
+  background: #f1f5f9 !important;
+  width: 100% !important;
+  height: 100% !important;
+  top: 0 !important;
+  left: 0 !important;
+}
+
+/* ── Block Manager ─────────────────────────────────────── */
+.gjs-block-categories { padding: 8px !important; }
+
+.gjs-block-category { margin-bottom: 4px !important; }
+
+.gjs-block-category .gjs-title {
+  background: #0f172a !important;
+  color: #94a3b8 !important;
+  font-size: 10px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.12em !important;
+  text-transform: uppercase !important;
+  padding: 8px 12px !important;
+  border-radius: 6px !important;
+  border: none !important;
+  cursor: pointer !important;
+}
+
+.gjs-block-category .gjs-title:hover { color: #fff !important; }
+
+.gjs-blocks-c {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 6px !important;
+  padding: 8px !important;
+}
+
+.gjs-block {
+  background: #0f172a !important;
+  border: 1px solid #1e293b !important;
+  border-radius: 8px !important;
+  color: #cbd5e1 !important;
+  font-size: 11px !important;
+  font-weight: 500 !important;
+  padding: 10px 6px 8px !important;
+  margin: 0 !important;
+  width: calc(50% - 3px) !important;
+  min-height: 56px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  cursor: grab !important;
+  transition: all 0.15s ease !important;
+  line-height: 1.3 !important;
+}
+
+.gjs-block:hover {
+  background: #1e293b !important;
+  border-color: #E85A1A !important;
+  color: #fff !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 12px rgba(232, 90, 26, 0.2) !important;
+}
+
+.gjs-block__media {
+  font-size: 20px !important;
+  margin-bottom: 4px !important;
+  display: block !important;
+}
+
+/* ── Layer Manager ─────────────────────────────────────── */
+.gjs-layer {
+  background: transparent !important;
+  color: #94a3b8 !important;
+  border-bottom: 1px solid #0f172a !important;
+  font-size: 11px !important;
+  padding: 4px 8px !important;
+}
+
+.gjs-layer:hover { background: #0f172a !important; color: #fff !important; }
+
+.gjs-layer.gjs-selected,
+.gjs-layer.gjs-hovered {
+  background: #1e293b !important;
+  color: #E85A1A !important;
+}
+
+.gjs-layer__name { font-size: 11px !important; }
+
+/* ── Style Manager ─────────────────────────────────────── */
+.gjs-sm-sectors { padding: 0 !important; }
+
+.gjs-sm-sector-title {
+  background: #0f172a !important;
+  color: #94a3b8 !important;
+  font-size: 10px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.12em !important;
+  text-transform: uppercase !important;
+  padding: 8px 12px !important;
+  border-bottom: 1px solid #1e293b !important;
+  cursor: pointer !important;
+}
+
+.gjs-sm-sector-title:hover { color: #fff !important; }
+
+.gjs-sm-properties { padding: 8px !important; background: #111827 !important; }
+
+.gjs-sm-property { margin-bottom: 8px !important; }
+
+.gjs-sm-label {
+  color: #64748b !important;
+  font-size: 10px !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.08em !important;
+  margin-bottom: 3px !important;
+}
+
+.gjs-sm-field,
+.gjs-sm-field input,
+.gjs-sm-field select,
+.gjs-field,
+.gjs-field input,
+.gjs-field select,
+.gjs-field textarea {
+  background: #0f172a !important;
+  border: 1px solid #1e293b !important;
+  color: #e2e8f0 !important;
+  border-radius: 5px !important;
+  font-size: 12px !important;
+  padding: 4px 8px !important;
+}
+
+.gjs-sm-field input:focus,
+.gjs-field input:focus {
+  border-color: #E85A1A !important;
+  outline: none !important;
+}
+
+.gjs-sm-field--color .gjs-sm-field { padding: 2px !important; }
+
+/* ── Trait Manager ─────────────────────────────────────── */
+.gjs-trt-traits { padding: 8px !important; }
+
+.gjs-trt-trait { margin-bottom: 8px !important; }
+
+.gjs-label {
+  color: #64748b !important;
+  font-size: 10px !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.08em !important;
+  margin-bottom: 3px !important;
+}
+
+/* ── Canvas selection & toolbar ────────────────────────── */
+.gjs-selected {
+  outline: 2px solid #E85A1A !important;
+  outline-offset: 1px !important;
+}
+
+.gjs-hovered {
+  outline: 1px dashed rgba(232, 90, 26, 0.5) !important;
+  outline-offset: 1px !important;
+}
+
+.gjs-toolbar {
+  background: #E85A1A !important;
+  border-radius: 6px !important;
+  padding: 2px !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4) !important;
+}
+
+.gjs-toolbar-item {
+  color: #fff !important;
+  width: 28px !important;
+  height: 28px !important;
+  border-radius: 4px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.gjs-toolbar-item:hover { background: rgba(255,255,255,0.2) !important; }
+
+/* ── Resize handles ────────────────────────────────────── */
+.gjs-resizer-h { background: #E85A1A !important; border-radius: 2px !important; }
+
+/* ── Placeholder drop zone ─────────────────────────────── */
+.gjs-placeholder {
+  background: rgba(232, 90, 26, 0.15) !important;
+  border: 2px dashed #E85A1A !important;
+  border-radius: 6px !important;
+}
+
+.gjs-placeholder-int { background: transparent !important; }
+
+/* ── Scrollbars ────────────────────────────────────────── */
+.gjs-blocks-container::-webkit-scrollbar,
+.gjs-layers-container::-webkit-scrollbar,
+.gjs-styles-container::-webkit-scrollbar,
+.gjs-traits-container::-webkit-scrollbar { width: 4px !important; }
+
+.gjs-blocks-container::-webkit-scrollbar-track,
+.gjs-layers-container::-webkit-scrollbar-track,
+.gjs-styles-container::-webkit-scrollbar-track,
+.gjs-traits-container::-webkit-scrollbar-track { background: #0f172a !important; }
+
+.gjs-blocks-container::-webkit-scrollbar-thumb,
+.gjs-layers-container::-webkit-scrollbar-thumb,
+.gjs-styles-container::-webkit-scrollbar-thumb,
+.gjs-traits-container::-webkit-scrollbar-thumb {
+  background: #374151 !important;
+  border-radius: 2px !important;
+}
+
+/* ── Color picker ──────────────────────────────────────── */
+.gjs-field-color-picker { border-radius: 4px !important; }
+
+/* ── Code view ─────────────────────────────────────────── */
+.gjs-cm-editor { background: #0f172a !important; color: #e2e8f0 !important; }
