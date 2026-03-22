@@ -13,6 +13,7 @@ const sections = [
   { href: '/ew-admin/media', emoji: '🖼️', title: 'Media', desc: 'Upload logo, OG image, food photos' },
   { href: '/ew-admin/inquiries', emoji: '📬', title: 'Inquiries', desc: 'View catering and chef inquiry submissions' },
   { href: '/ew-admin/analytics', emoji: '📊', title: 'Analytics', desc: 'Basic page-view analytics' },
+  { href: '/ew-admin/dns-setup', emoji: '🌐', title: 'DNS Setup', desc: 'Step-by-step guide to go live on elephantwingskc.com' },
 ]
 
 export default function AdminDashboard() {

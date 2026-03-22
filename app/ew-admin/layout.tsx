@@ -15,6 +15,7 @@ const navLinks = [
   { href: '/ew-admin/media', label: '🖼️ Media' },
   { href: '/ew-admin/inquiries', label: '📬 Inquiries' },
   { href: '/ew-admin/analytics', label: '📊 Analytics' },
+  { href: '/ew-admin/dns-setup', label: '🌐 DNS Setup' },
 ]
 
 export default function AdminLayout({ children }: { children: React.ReactNode }) {
